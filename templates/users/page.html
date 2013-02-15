@@ -1,0 +1,20 @@
+<table class="table table-striped">
+  <thead>
+    <th>Id</th>
+    <th>Username</th>
+    <th>Real Name</th>
+    <th>Email</th>
+    <th>Location</th>
+  </thead>
+  <tbody>
+    {{#users}}
+      <tr>
+        <td>{{attributes.id}}</td>
+        <td><a href="#user/{{attributes.username}}">{{attributes.username}}</a></td>
+        <td>{{attributes.name}}</td>
+        <td>{{attributes.email}}</td>
+        <td>{{attributes.location}}</td>
+      </tr>
+    {{/users}}
+  </tbody>
+</table>

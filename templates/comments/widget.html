@@ -1,0 +1,21 @@
+<form class="comment">
+  <fieldset>
+    <legend>Comment</legend>
+    <textarea name="comment" placeholder="Tell your fellow camper something..."></textarea>
+    <br />
+    <button class="btn" type="submit">Comment</button>
+  </fieldset>
+</form>
+<hr />
+
+<h5>Comments</h5>
+<ul class="comments">
+{{#comments}}
+  <li>
+  {{attributes.comment}} - <a href="#user/{{attributes.username}}">{{attributes.username}}</a>
+</li>
+{{/comments}}
+{{^comments}}
+  <li>This user has no comments</li>
+{{/comments}}
+</ul>

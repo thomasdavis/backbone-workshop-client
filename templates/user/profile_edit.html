@@ -1,0 +1,13 @@
+<form class="edit">
+  <fieldset>
+    <legend>Edit {{user.username}}</legend>
+    <label>Name</label>
+    <input type="text" name="name" value="{{user.name}}" placeholder="Type something…">
+    <label>Location</label>
+    <input type="text" name="location" value="{{user.location}}" placeholder="Type something…">
+    <label>Description</label>
+    <textarea name="description">{{user.description}}</textarea>
+    <hr />
+    <button class="btn" type="submit">Save</button>
+  </fieldset>
+</form>
